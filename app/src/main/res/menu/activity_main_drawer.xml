@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_game1"
+            android:icon="@drawable/ic_simon"
+            android:title="Simon binario" />
+        <item
+            android:id="@+id/nav_game2"
+            android:icon="@drawable/ic_quiz"
+            android:title="Quiz!" />
+    </group>
+</menu>

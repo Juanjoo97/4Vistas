@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.a4vistas.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_game1"
+        android:name="com.example.a4vistas.ui.game1.GameFragment"
+        android:label="@string/menu_game1"
+        tools:layout="@layout/fragment_game1" />
+
+    <fragment
+        android:id="@+id/nav_game2"
+        android:name="com.example.a4vistas.ui.game2.Game2Fragment"
+        android:label="@string/menu_game2"
+        tools:layout="@layout/fragment_game2" >
+        <action
+            android:id="@+id/action_nav_game2_to_game2Fragment2"
+            app:destination="@id/game2Fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.a4vistas.ui.settings.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/game2Fragment2"
+        android:name="com.example.a4vistas.ui.game2.Game2Fragment2"
+        android:label="@string/menu_game2_1" >
+        <action
+            android:id="@+id/action_game2Fragment2_to_game2Fragment3"
+            app:destination="@id/game2Fragment3" />
+        <action
+            android:id="@+id/action_game2Fragment2_to_game2Fragment8"
+            app:destination="@id/game2Fragment8" />
+    </fragment>
+    <fragment
+        android:id="@+id/game2Fragment3"
+        android:name="com.example.a4vistas.ui.game2.Game2Fragment3"
+        android:label="@string/menu_game2_2">
+        <action
+            android:id="@+id/action_game2Fragment3_to_game2Fragment4"
+            app:destination="@id/game2Fragment4" />
+        <action
+            android:id="@+id/action_game2Fragment3_to_game2Fragment8"
+            app:destination="@id/game2Fragment8" />
+    </fragment>
+    <fragment
+        android:id="@+id/game2Fragment4"
+        android:name="com.example.a4vistas.ui.game2.Game2Fragment4"
+        android:label="@string/menu_game2_3">
+        <action
+            android:id="@+id/action_game2Fragment4_to_game2Fragment5"
+            app:destination="@id/game2Fragment5" />
+        <action
+            android:id="@+id/action_game2Fragment4_to_game2Fragment8"
+            app:destination="@id/game2Fragment8" />
+    </fragment>
+    <fragment
+        android:id="@+id/game2Fragment5"
+        android:name="com.example.a4vistas.ui.game2.Game2Fragment5"
+        android:label="@string/menu_game2_4">
+        <action
+            android:id="@+id/action_game2Fragment5_to_game2Fragment6"
+            app:destination="@id/game2Fragment6" />
+        <action
+            android:id="@+id/action_game2Fragment5_to_game2Fragment8"
+            app:destination="@id/game2Fragment8" />
+    </fragment>
+    <fragment
+        android:id="@+id/game2Fragment6"
+        android:name="com.example.a4vistas.ui.game2.Game2Fragment6"
+        android:label="@string/menu_game2_5">
+        <action
+            android:id="@+id/action_game2Fragment6_to_game2Fragment7"
+            app:destination="@id/game2Fragment7" />
+        <action
+            android:id="@+id/action_game2Fragment6_to_game2Fragment8"
+            app:destination="@id/game2Fragment8" />
+    </fragment>
+    <fragment
+        android:id="@+id/game2Fragment7"
+        android:name="com.example.a4vistas.ui.game2.Game2Fragment7"
+        android:label="@string/menu_game2_6">
+        <action
+            android:id="@+id/action_game2Fragment7_to_nav_game2"
+            app:destination="@id/nav_game2" />
+        <action
+            android:id="@+id/action_game2Fragment7_to_game2Fragment8"
+            app:destination="@id/game2Fragment8" />
+    </fragment>
+    <fragment
+        android:id="@+id/game2Fragment8"
+        android:name="com.example.a4vistas.ui.game2.Game2Fragment8"
+        android:label="@string/menu_game2_7">
+        <action
+            android:id="@+id/action_game2Fragment8_to_nav_game2"
+            app:destination="@id/nav_game2" />
+    </fragment>
+</navigation>
